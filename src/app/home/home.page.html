@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Hola! {{username}}
+        </ion-title>
+        <ion-buttons slot="primary">
+            <ion-button color="tertiary" (click)="Logout()">
+                <ion-icon slot="end" name="log-out"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="ion-padding">
+        Login Inicio {{ password }}
+    </div>
+    <span>El ID del Usuario es: <b> {{id}} </b></span>
+</ion-content>
